@@ -1,0 +1,220 @@
+* {
+    font-family: "Cabin", sans-serif;
+}
+
+body {
+    margin: 0px;
+    color: white;
+    text-align: center;
+}
+
+header {
+    color: white;
+    background-color: #00613c;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 3%;
+}
+
+h1 {
+    margin-right: auto;
+    font-family: "Saira", sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    transition: 0.5s;
+}   
+
+ul, ol {
+    list-style-type: none;
+}
+
+.about {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+#hobbies, #musicas {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.lista-hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#subtitulo-hobbies {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+#subtitulo-top5 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: #00613c;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    width: 6vw;
+    height: 15vh;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: rgb(160, 160, 129);
+    transition: 0.3s;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #subtitulo-hobbies, #subtitulo-top5 {
+        text-align: start;
+    }
+
+    body {
+        font-size: 1.2vw;
+    }
+
+    .card {
+        height: 10vh;
+    }
+
+    img {
+        width: 10vw;
+        height: auto;
+    }
+
+    footer img {
+        width: 10vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 620px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer img {
+        width: 20vw;
+        height: auto;
+    }
+}
+
+.flex-container {
+    display: flex;
+    padding-top: 50px;
+    background-image: url(https://images.unsplash.com/photo-1587731556938-38755b4803a6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kaWV8ZW58MHx8MHx8fDA%3D);
+}
+
+.flex-container > div {
+    margin: 10px;
+    padding: 2%;
+    text-align: center;
+}
+
+.link {
+    background: linear-gradient(to bottom, #002517 0%, #002517 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 0.02vw 0.02vw;
+    transition: 0.5s;
+}
+
+.link:hover {
+    background-size: 4px 50px;
+}
+
+#final {
+    background-image: linear-gradient(to top left, #333333, black);
+}
+
+nav {
+    list-style: none;
+    padding: 1.5%;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 1vw;
+}
+
+.button {
+    box-sizing: border-box;
+    color: white;
+    font-size: 90%;
+    background-color: transparent;
+    border-width: 3px;
+    border-color: #00613c;
+    border-radius: 5px;
+    padding: 0px 10px;
+    transition: 0.5s;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 5vw;
+}
+
+.button:hover {
+    background-color: #007548;
+    color: white;
+    transition: 0.5s;
+}
+
+.button.a {
+    text-decoration: none;
+}
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    width: 2.5vw;
+    height: auto;
+}
